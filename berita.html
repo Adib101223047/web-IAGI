@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Berita — SM-IAGI UPER</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <link rel="stylesheet" href="berita.css">
+</head>
+
+<body>
+
+  <nav id="mainNav">
+    <div class="nav-logo" onclick="window.location.href='index.html'">
+      <img src="images/IKATAN GEOLOGI.png" alt="Logo SM-IAGI UPER">
+    </div>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html#about" onclick="closeNav()">Tentang</a></li>
+      <li><a href="index.html#visi-misi" onclick="closeNav()">Visi Misi</a></li>
+      <li><a href="index.html#divisi" onclick="closeNav()">Struktur</a></li>
+      <li><a href="index.html#berita" onclick="closeNav()">Berita</a></li>
+      <li><a href="index.html#contact" onclick="closeNav()">Kontak</a></li>
+    </ul>
+
+    <div class="nav-toggle" id="navToggle" onclick="toggleNav()" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════════
+        BAGIAN BERITA
+  ══════════════════════════════════════ -->
+
+  <section class="all-news-section">
+    <div class="container">
+
+      <!-- Section Header Center -->
+      <div class="all-news-header">
+        <h1 class="all-news-title">Berita & Kegiatan</h1>
+        <p class="all-news-desc">
+          Ikuti berbagai informasi terbaru, kegiatan, program kerja, dan aktivitas SM-IAGI Universitas Pertamina.
+        </p>
+      </div>
+
+      <div class="all-news-grid">
+
+        <!-- Berita Terbaru -->
+        <article class="news-card"
+                 data-gambar="images/Berita/Berita 1.JPG"
+                 data-judul="Pererat Kebersamaan, Divisi Internal SM-IAGI UPER Gelar Gathering Anggota"
+                 data-isi="<p>Dalam upaya mempererat hubungan antaranggota, Divisi Internal SM-IAGI Universitas Pertamina mengadakan kegiatan Gathering yang berlangsung dengan penuh kehangatan dan kebersamaan. Acara ini diikuti oleh seluruh pengurus sebagai wadah untuk membangun komunikasi yang lebih erat di luar kegiatan organisasi.</p><p>Berbagai permainan interaktif, sesi berbagi cerita, hingga makan bersama menjadi rangkaian kegiatan yang menciptakan suasana akrab dan menyenangkan. Selain sebagai ajang refreshing, gathering ini juga menjadi momentum untuk meningkatkan rasa kekeluargaan serta memperkuat kerja sama antaranggota dalam menjalankan program kerja organisasi.</p><p>Melalui kegiatan ini, diharapkan seluruh pengurus semakin solid, saling mengenal lebih dekat, dan mampu menciptakan lingkungan organisasi yang harmonis sehingga dapat memberikan kontribusi terbaik bagi SM-IAGI Universitas Pertamina.</p>"
+                 data-tagline="KEGIATAN INTERNAL"
+                 onclick="handleNewsCardClick(this)">
+          <div class="card-thumb-wrapper">
+            <img src="images/Berita/Berita 1.JPG" alt="Prestasi Ferna" class="card-thumb">
+            <span class="card-badge badge-juara">MEMBUMIKAN ILMU BUMI</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="meta-item"><i class="far fa-calendar-alt"></i> 22 Jul 2026</span>
+              <span class="meta-item"><i class="far fa-user"></i> Admin SM - IAGI UPER</span>
+            </div>
+            <h3 class="card-title">
+              <a href="javascript:void(0)">Pererat Kebersamaan, Divisi Internal SM-IAGI UPER...</a>
+            </h3>
+            <p class="card-excerpt">
+              Dalam upaya mempererat hubungan antaranggota, Divisi Internal SM-IAGI Universitas Pertamina...
+            </p>
+            <button type="button" class="read-more-btn">Baca Selengkapnya &rarr;</button>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="news-card"
+                 data-gambar="images/Berita/Berita 2.png"
+                 data-judul="Divisi Akademik SM-IAGI UPER Selenggarakan Sharing Session Bersama Alumni"
+                 data-isi="<p>JAKARTA - Divisi Akademik SM-IAGI Universitas Pertamina sukses menyelenggarakan kegiatan Sharing Session Alumni yang menghadirkan alumni sebagai narasumber untuk berbagi pengalaman selama berkarier di industri pertambangan.</p><p>Mengusung tema mengenai perjalanan seorang geologist dari dunia akademik menuju dunia profesional, kegiatan ini memberikan wawasan kepada mahasiswa mengenai tantangan, peluang karier, serta kompetensi yang perlu dipersiapkan sejak di bangku kuliah.</p><p>Melalui sesi diskusi yang interaktif, peserta memperoleh berbagai insight mengenai pengembangan diri, dunia kerja, hingga pentingnya membangun jaringan profesional. Kegiatan ini diharapkan dapat memotivasi mahasiswa untuk terus meningkatkan kemampuan akademik maupun non-akademik dalam menghadapi dunia industri.</p>"
+                 data-tagline="AKADEMIK"
+                 onclick="handleNewsCardClick(this)">
+          <div class="card-thumb-wrapper">
+            <img src="images/Berita/Berita 2.png" alt="Piala Bergilir" class="card-thumb">
+            <span class="card-badge badge-juara">LUMNI TALK</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="meta-item"><i class="far fa-calendar-alt"></i> 19 Jul 2026</span>
+              <span class="meta-item"><i class="far fa-user"></i> Admin SM-IAGI UPER</span>
+            </div>
+            <h3 class="card-title">
+              <a href="javascript:void(0)">Divisi Akademik SM-IAGI UPER Selenggarakan...</a>
+            </h3>
+            <p class="card-excerpt">
+              Divisi Akademik SM-IAGI Universitas Pertamina sukses menyelenggarakan...
+            </p>
+            <button type="button" class="read-more-btn">Baca Selengkapnya &rarr;</button>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="news-card"
+                 data-gambar="images/Berita/Berita 3.jpeg"
+                 data-judul="SM-IAGI Universitas Pertamina Gelar Pelepasan Alumni sebagai Bentuk Apresiasi dan Silaturahmi"
+                 data-isi="<p>JAKARTA - SM-IAGI Universitas Pertamina menyelenggarakan acara pelepasan alumni sebagai bentuk apresiasi atas dedikasi serta kontribusi yang telah diberikan selama menjadi bagian dari organisasi.</p><p>Kegiatan ini berlangsung dalam suasana hangat dan penuh kebersamaan. Selain menjadi momen perpisahan, acara ini juga menjadi kesempatan untuk mempererat hubungan antara alumni dengan pengurus aktif sehingga silaturahmi tetap terjaga.</p><p>SM-IAGI Universitas Pertamina berharap para alumni dapat terus memberikan inspirasi, berbagi pengalaman, serta menjadi mitra organisasi dalam mendukung pengembangan mahasiswa geologi di masa mendatang.</p>"
+                 data-tagline="APRESIASI"
+                 onclick="handleNewsCardClick(this)">
+          <div class="card-thumb-wrapper">
+            <img src="images/Berita/Berita 3.jpeg" alt="Adiwiyata" class="card-thumb">
+            <span class="card-badge badge-juara">ALUMNI EVENT</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="meta-item"><i class="far fa-calendar-alt"></i> 25 Mei 2026</span>
+              <span class="meta-item"><i class="far fa-user"></i> Admin SM-IAGI UPER</span>
+            </div>
+            <h3 class="card-title">
+              <a href="javascript:void(0)">SM-IAGI Universitas Pertamina Gelar Pelepasan...</a>
+            </h3>
+            <p class="card-excerpt">
+              SM-IAGI Universitas Pertamina menyelenggarakan acara pelepasan...
+            </p>
+            <button type="button" class="read-more-btn">Baca Selengkapnya &rarr;</button>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="news-card"
+                 data-gambar="images/Berita/Berita 4.jpeg"
+                 data-judul="Kabinet SM-IAGI Universitas Pertamina 2026/2027 Gelar Rapat Perdana"
+                 data-isi="<p>JAKARTA - SM-IAGI Universitas Pertamina resmi memulai perjalanan kepengurusan Kabinet 2026/2027 melalui pelaksanaan rapat perdana yang dihadiri oleh seluruh pengurus.</p><p>Rapat ini menjadi langkah awal dalam menyusun arah organisasi, memperkenalkan struktur kepengurusan, serta membahas program kerja yang akan dilaksanakan selama satu periode ke depan. Selain itu, setiap divisi juga diberikan kesempatan untuk menyampaikan rencana kegiatan dan target yang ingin dicapai.</p><p>Dengan semangat kolaborasi dan profesionalisme, rapat perdana ini diharapkan menjadi fondasi yang kuat dalam membangun organisasi yang aktif, inovatif, serta memberikan manfaat bagi seluruh mahasiswa Teknik Geologi Universitas Pertamina.</p>"
+                 data-tagline="BERITA INTERNAL"
+                 onclick="handleNewsCardClick(this)">
+          <div class="card-thumb-wrapper">
+            <img src="images/Berita/Berita 4.jpeg" alt="World Clean Up Day" class="card-thumb">
+            <span class="card-badge badge-juara">KEGIATAN SISWA</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="meta-item"><i class="far fa-calendar-alt"></i> 23 Jul 2026</span>
+              <span class="meta-item"><i class="far fa-user"></i> Admin SM-IAGI UPER</span>
+            </div>
+            <h3 class="card-title">
+              <a href="javascript:void(0)">Kabinet SM-IAGI Universitas Pertamina perjalanan...</a>
+            </h3>
+            <p class="card-excerpt">
+              SM-IAGI Universitas Pertamina resmi memulai kepengurusan Kabinet...
+            </p>
+            <button type="button" class="read-more-btn">Baca Selengkapnya &rarr;</button>
+          </div>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="news-card"
+                 data-gambar="images/Berita/Berita 5.jpeg"
+                 data-judul="SM-IAGI UPER Gelar Get To Know untuk Menyambut Mahasiswa Teknik Geologi Angkatan 2024"
+                 data-isi="<p>JAKARTA - Sebagai bagian dari upaya mempererat hubungan antarangkatan, SM-IAGI Universitas Pertamina mengadakan kegiatan Get To Know yang ditujukan bagi mahasiswa Teknik Geologi angkatan 2024.</p><p>Kegiatan ini bertujuan memperkenalkan organisasi, budaya kekeluargaan, serta berbagai program yang dimiliki SM-IAGI kepada mahasiswa baru. Melalui berbagai sesi interaktif, permainan kelompok, dan diskusi santai, peserta diajak untuk saling mengenal sekaligus membangun relasi dengan mahasiswa dari berbagai angkatan.</p><p>Diharapkan melalui kegiatan ini, mahasiswa angkatan 2024 dapat lebih mengenal lingkungan organisasi, aktif berpartisipasi dalam berbagai kegiatan kemahasiswaan, serta menumbuhkan rasa memiliki terhadap keluarga besar Teknik Geologi Universitas Pertamina.</p>"
+                 data-tagline="WELCOMING EVENT"
+                 onclick="handleNewsCardClick(this)">
+          <div class="card-thumb-wrapper">
+            <img src="images/Berita/Berita 5.jpeg" alt="Kegiatan Siswa" class="card-thumb">
+            <span class="card-badge badge-juara">KEGIATAN SISWA</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="meta-item"><i class="far fa-calendar-alt"></i> 23 Jul 2026</span>
+              <span class="meta-item"><i class="far fa-user"></i> Admin SM-IAGI UPER</span>
+            </div>
+            <h3 class="card-title">
+              <a href="javascript:void(0)">SM-IAGI UPER Gelar Get To Know untuk Menyambut Mahasiswa...</a>
+            </h3>
+            <p class="card-excerpt">
+              Sebagai bagian dari upaya mempererat hubungan antarangkatan SM-IAGI...
+            </p>
+            <button type="button" class="read-more-btn">Baca Selengkapnya &rarr;</button>
+          </div>
+        </article>
+
+        <!-- Card 6 -->
+        <article class="news-card"
+                 data-gambar="images/Berita/Berita 6.jpeg"
+                 data-judul="SM-IAGI Universitas Pertamina Laksanakan Benchmarking ke Universitas Indonesia"
+                 data-isi="<p>JAKARTA - SM-IAGI Universitas Pertamina melaksanakan kegiatan benchmarking ke Universitas Indonesia sebagai upaya memperluas wawasan organisasi serta memperkuat hubungan antarlembaga kemahasiswaan.</p><p>Dalam kegiatan ini, kedua organisasi saling berbagi pengalaman mengenai sistem kepengurusan, pengembangan program kerja, strategi kaderisasi, hingga pelaksanaan berbagai kegiatan akademik maupun non-akademik.</p><p>Melalui diskusi yang berlangsung secara terbuka, diharapkan tercipta pertukaran ide dan praktik terbaik yang dapat diterapkan dalam pengembangan organisasi. Benchmarking ini juga menjadi langkah awal untuk membuka peluang kolaborasi antara kedua organisasi di masa yang akan datang.</p>"
+                 data-tagline="Benchmarking ke UI"
+                 onclick="handleNewsCardClick(this)">
+          <div class="card-thumb-wrapper">
+            <img src="images/Berita/Berita 6.jpeg" alt="Kegiatan Siswa" class="card-thumb">
+            <span class="card-badge badge-juara">STUDI BANDING</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="meta-item"><i class="far fa-calendar-alt"></i> 23 Jul 2026</span>
+              <span class="meta-item"><i class="far fa-user"></i> Admin SM-IAGI UPER</span>
+            </div>
+            <h3 class="card-title">
+              <a href="javascript:void(0)">SM-IAGI Universitas Pertamina Laksanakan Benchmarking...</a>
+            </h3>
+            <p class="card-excerpt">
+              SM-IAGI Universitas Pertamina melaksanakan kegiatan benchmarking...
+            </p>
+            <button type="button" class="read-more-btn">Baca Selengkapnya &rarr;</button>
+          </div>
+        </article>
+
+        <!-- Card 7 -->
+        <article class="news-card"
+                 data-gambar="images/Berita/Berita 7.jpeg"
+                 data-judul="Menggali Potensi Panas Bumi, SM-IAGI UPER Gelar Webinar Geothermal"
+                 data-isi="<p>JAKARTA - SM-IAGI Universitas Pertamina kembali menghadirkan kegiatan yang memperluas wawasan mahasiswa melalui webinar bertemakan geothermal. Kegiatan ini menjadi wadah bagi mahasiswa untuk mengenal lebih jauh mengenai energi panas bumi serta potensinya sebagai salah satu sumber energi terbarukan di Indonesia.</p><p>Dalam kegiatan ini, peserta mendapatkan pemahaman mengenai sistem panas bumi, proses eksplorasi, hingga peluang pengembangan geothermal di Indonesia. Selain menambah wawasan akademik, kegiatan ini juga memberikan gambaran mengenai penerapan ilmu geologi dalam industri panas bumi serta peluang karier yang dapat dijalani oleh mahasiswa Teknik Geologi.</p><p>Melalui kegiatan ini, SM-IAGI UPER berharap dapat terus menjadi ruang bagi mahasiswa untuk belajar, berdiskusi, dan berkembang bersama. Semangat untuk terus menggali ilmu dan memperluas wawasan menjadi bagian dari langkah SM-IAGI UPER dalam mempersiapkan generasi geologi yang kompeten dan adaptif terhadap perkembangan industri energi.</p>"
+                 data-tagline="EXPLORE, LEARN, AND GROW TOGETHER."
+                 onclick="handleNewsCardClick(this)">
+          <div class="card-thumb-wrapper">
+            <img src="images/Berita/Berita 7.jpeg" alt="Kegiatan Siswa" class="card-thumb">
+            <span class="card-badge badge-juara">SEMINAR</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="meta-item"><i class="far fa-calendar-alt"></i> 23 Jul 2026</span>
+              <span class="meta-item"><i class="far fa-user"></i> Admin SM-IAGI UPER</span>
+            </div>
+            <h3 class="card-title">
+              <a href="javascript:void(0)">Menggali Potensi Panas Bumi, SM-IAGI UPER Gelar...</a>
+            </h3>
+            <p class="card-excerpt">
+              SM-IAGI Universitas Pertamina kembali menghadirkan kegiatan yang memperluas...
+            </p>
+            <button type="button" class="read-more-btn">Baca Selengkapnya &rarr;</button>
+          </div>
+        </article>
+
+      
+
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+    function handleNewsCardClick(cardElement) {
+      const gambar = cardElement.getAttribute('data-gambar');
+      const judul = cardElement.getAttribute('data-judul');
+      const isi = cardElement.getAttribute('data-isi');
+      const tagline = cardElement.getAttribute('data-tagline');
+
+      const isiHTML = `<h3>${judul}</h3>${isi}`;
+      openNewsModal(gambar, isiHTML, tagline);
+    }
+  </script>
+
+  <div id="partners">
+    <div class="partner-outer">
+      <div class="partner-track">
+
+        <div class="partner-group">
+          <div class="partner-item"><img src="images/Partner/IAGI.png" alt="IAGI"></div>
+          <div class="partner-item"><img src="images/Partner/HMTG Mahandraga.png" alt="HMTG"></div>
+          <div class="partner-item"><img src="images/Partner/Geologi Uper.png" alt="Geologi"></div>
+          <div class="partner-item"><img src="images/Partner/Universitas Pertamina.png" alt="Universitas Pertamina"></div>
+          <div class="partner-item"><img src="images/Partner/FGMI.png" alt="FGMI"></div>
+        </div>
+
+        <div class="partner-group">
+          <div class="partner-item"><img src="images/Partner/IAGI.png" alt="IAGI"></div>
+          <div class="partner-item"><img src="images/Partner/HMTG Mahandraga.png" alt="HMTG"></div>
+          <div class="partner-item"><img src="images/Partner/Geologi Uper.png" alt="Geologi"></div>
+          <div class="partner-item"><img src="images/Partner/Universitas Pertamina.png" alt="Universitas Pertamina"></div>
+          <div class="partner-item"><img src="images/Partner/FGMI.png" alt="FGMI"></div>
+        </div>
+
+        <div class="partner-group">
+          <div class="partner-item"><img src="images/Partner/IAGI.png" alt="IAGI"></div>
+          <div class="partner-item"><img src="images/Partner/HMTG Mahandraga.png" alt="HMTG"></div>
+          <div class="partner-item"><img src="images/Partner/Geologi Uper.png" alt="Geologi"></div>
+          <div class="partner-item"><img src="images/Partner/Universitas Pertamina.png" alt="Universitas Pertamina"></div>
+          <div class="partner-item"><img src="images/Partner/FGMI.png" alt="FGMI"></div>
+        </div>
+
+        <div class="partner-group">
+          <div class="partner-item"><img src="images/Partner/IAGI.png" alt="IAGI"></div>
+          <div class="partner-item"><img src="images/Partner/HMTG Mahandraga.png" alt="HMTG"></div>
+          <div class="partner-item"><img src="images/Partner/Geologi Uper.png" alt="Geologi"></div>
+          <div class="partner-item"><img src="images/Partner/Universitas Pertamina.png" alt="Universitas Pertamina"></div>
+          <div class="partner-item"><img src="images/Partner/FGMI.png" alt="FGMI"></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <footer>
+
+    <div class="footer-inner">
+
+      <div class="nav-logo" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
+        <img src="images/IKATAN GEOLOGI.png" alt="Logo SM-IAGI UPER">
+      </div>
+
+      <div class="footer-socials">
+        <a href="https://instagram.com/smiagi_uper" target="_blank" class="footer-social-link" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/company/smiagiup/?originalSubdomain=id" target="_blank"
+          class="footer-social-link" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+            <rect x="2" y="9" width="4" height="12" />
+            <circle cx="4" cy="4" r="2" />
+          </svg>
+        </a>
+        <a href="https://www.tiktok.com/search?q=sm%20iagi%20uper&t=1779756327136" target="_blank"
+          class="footer-social-link" aria-label="TikTok">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
+          </svg>
+        </a>
+        <a href="mailto:sekretaris.smiagiup@gmail.com" class="footer-social-link" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+            <polyline points="22,6 12,13 2,6" />
+          </svg>
+        </a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span class="footer-copy">
+        &copy; 2026 SM-IAGI Universitas Pertamina.
+        Developed by Academic &amp; Professional Division.
+      </span>
+      <span class="footer-badge">Kabinet Parivartana</span>
+    </div>
+
+  </footer>
+
+  <div class="article-modal" id="articleModal">
+    <div class="modal-overlay" onclick="closeModal()"></div>
+    <div class="modal-container">
+      <button type="button" class="modal-close" onclick="closeModal()" aria-label="Tutup">&times;</button>
+
+      <div class="article-content">
+        <div class="article-featured-image">
+          <img id="modalImage" src="" alt="Foto Berita">
+        </div>
+        <div class="article-body">
+          <div id="modalText"></div>
+          <p class="article-tagline" id="modalTagline"></p>
+        </div>
+        <div class="article-share">
+          <span class="share-label">Bagikan:</span>
+          <div class="share-buttons">
+            <a href="#" id="shareFB" target="_blank" class="share-btn facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" id="shareTW" target="_blank" class="share-btn twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" id="shareWA" target="_blank" class="share-btn whatsapp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCRIPT JAVASCRIPT MODAL -->
+  <script>
+    // Fungsi penangan klik kartu berita (Membaca data-* attribute)
+    function handleNewsClick(cardElement) {
+      const gambar = cardElement.getAttribute('data-gambar');
+      const judul = cardElement.getAttribute('data-judul');
+      const isi = cardElement.getAttribute('data-isi');
+      const tagline = cardElement.getAttribute('data-tagline');
+      // data-isi sudah berisi tag <p> di dalamnya, jadi tidak perlu dibungkus <p> lagi
+      const isiHTML = `<h3>${judul}</h3>${isi}`;
+      openNewsModal(gambar, isiHTML, tagline);
+    }
+
+    // Fungsi utama penyedia modal
+    function openNewsModal(gambar, isiHTML, tagline) {
+      const modalImg = document.getElementById('modalImage');
+      if (gambar) {
+        modalImg.src = gambar;
+        modalImg.style.display = 'block';
+      } else {
+        modalImg.style.display = 'none';
+      }
+      document.getElementById('modalText').innerHTML = isiHTML || '';
+      document.getElementById('modalTagline').innerText = tagline || '';
+      // Menghubungkan URL Berbagi Sosial Media
+      const currentURL = encodeURIComponent(window.location.href);
+      document.getElementById('shareFB').href = `https://www.facebook.com/sharer/sharer.php?u=${currentURL}`;
+      document.getElementById('shareTW').href = `https://twitter.com/intent/tweet?url=${currentURL}`;
+      document.getElementById('shareWA').href = `https://api.whatsapp.com/send?text=${currentURL}`;
+      document.getElementById('articleModal').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      document.getElementById('articleModal').classList.remove('active');
+      document.body.style.overflow = 'auto';
+    }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    emailjs.init("rzSbSzJGnqHLJfNuY");
+  </script>
+  <script src="script.js"></script>
+
+</body>
+</html>

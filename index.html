@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SM-IAGI UPER</title>
+
+  <!-- ══ Google Fonts (font Plus Jakarta Sans dimuat lewat @import di style.css) ══ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- ══ Stylesheet ══ -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ══════════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════════ -->
+  <nav id="mainNav">
+
+    <div class="nav-logo" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
+      <img src="images/IKATAN GEOLOGI.png" alt="Logo SM-IAGI UPER">
+    </div>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" onclick="closeNav()">Tentang</a></li>
+      <li><a href="#visi-misi" onclick="closeNav()">Visi Misi</a></li>
+      <li><a href="#divisi" onclick="closeNav()">Struktur</a></li>
+      <li><a href="#berita" onclick="closeNav()">Berita</a></li>
+      <li><a href="#contact" onclick="closeNav()">Kontak</a></li>
+    </ul>
+
+    <div class="nav-toggle" id="navToggle" onclick="toggleNav()" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+  </nav>
+
+  <!-- ══════════════════════════════════════
+       HERO
+  ══════════════════════════════════════ -->
+  <section id="hero">
+
+    <!-- VIDEO BACKGROUND -->
+    <video class="hero-video" autoplay muted loop playsinline>
+      <source src="videos/IAGI.mp4" type="video/mp4">
+    </video>
+
+    <!-- OVERLAY -->
+    <div class="hero-overlay"></div>
+
+    <!-- KONTEN HERO -->
+    <div class="hero-inner">
+
+      <h1 class="hero-title">
+        Seksi Mahasiswa<br>
+        <span class="accent">IAGI</span> Universitas<br>
+        Pertamina
+      </h1>
+
+      <p class="hero-sub">
+        Membangun regenerasi mahasiswa yang unggul dan berkelanjutan dalam ilmu kebumian.
+        Kabinet <strong>Parivartana</strong> — transformasi menuju era baru yang lebih progresif.
+      </p>
+
+      <div class="hero-cta">
+        <a href="#president-message" class="btn-primary">Pelajari Lebih Lanjut ↓</a>
+        <a href="#contact" class="btn-ghost">Hubungi Kami</a>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ══════════════════════════════════════
+       SAMBUTAN PRESIDEN
+  ══════════════════════════════════════ -->
+  <section id="president-message">
+
+    <div class="about-layout reverse">
+
+      <div class="president-photo reveal from-left">
+        <img src="images/Struktur IAGI Uper/BPH/Presiden.png" alt="Presiden SM-IAGI UPER">
+      </div>
+
+      <div class="president-content reveal from-right">
+
+        <div class="section-eyebrow">
+          Sambutan oleh
+        </div>
+
+        <h2 class="section-heading">
+          Presiden<br>
+          SM-IAGI UPER
+        </h2>
+
+        <p>
+          Assalamu'alaikum Wr. Wb., Salam Sejahtera, Shalom, Om Swastyastu, Namo Buddhaya, Salam Kebajikan.
+        </p>
+
+        <p>
+          Dengan penuh rasa syukur, saya mengucapkan selamat datang di Website
+          resmi SM-IAGI Universitas Pertamina Kabinet Parivartana 2026/2027
+        </p>
+
+        <div class="president-sign">
+          <h4>Raphael Alfaro Dumat</h4>
+          <span>Presiden SM-IAGI UPER 2026/2027</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ══════════════════════════════════════
+       NEWS SLIDER
+  ══════════════════════════════════════ -->
+  <section id="news">
+
+    <div class="news-header reveal">
+      <div class="section-eyebrow"><span class="sub-title">LATEST UPDATES</span></div>
+      <h2 class="section-heading">Kegiatan Terkini</h2>
+    </div>
+
+    <div class="news-slider" id="newsSlider">
+      <div class="news-track" id="newsTrack">
+
+        <div class="news-card active">
+          <img src="images/Kegiatan Terkini/IG 1.png" alt="Kegiatan 1" draggable="false">
+          <div class="news-card-overlay"></div>
+        </div>
+
+        <div class="news-card">
+          <img src="images/Kegiatan Terkini/IG 2.png" alt="Kegiatan 2" draggable="false">
+          <div class="news-card-overlay"></div>
+        </div>
+
+        <div class="news-card">
+          <img src="images/Kegiatan Terkini/IG 3.png" alt="Kegiatan 3" draggable="false">
+          <div class="news-card-overlay"></div>
+        </div>
+
+        <div class="news-card">
+          <img src="images/Kegiatan Terkini/IG 4.png" alt="Kegiatan 4" draggable="false">
+          <div class="news-card-overlay"></div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="news-dots" id="newsDots"></div>
+
+  </section>
+
+  <!-- ══════════════════════════════════════
+       STATS BAR
+  ══════════════════════════════════════ -->
+  <div id="stats">
+    <div class="stats-grid">
+
+      <div class="stat-item reveal delay-1">
+        <span class="stat-number" data-target="28" data-prefix="" data-suffix="">0</span>
+        <div class="stat-label">SM-IAGI ke-</div>
+      </div>
+
+      <div class="stat-item reveal delay-2">
+        <span class="stat-number stat-text">2026/2027</span>
+        <div class="stat-label">Periode</div>
+      </div>
+
+      <div class="stat-item reveal delay-3">
+        <span class="stat-number" data-target="5" data-prefix="" data-suffix="">0</span>
+        <div class="stat-label">Divisi Aktif</div>
+      </div>
+
+      <div class="stat-item reveal delay-4">
+        <span class="stat-number" data-target="40" data-prefix="" data-suffix="">0</span>
+        <div class="stat-label">Anggota</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       TENTANG KAMI
+  ══════════════════════════════════════ -->
+  <section id="about">
+    <div class="about-layout">
+
+      <div class="about-img-wrap reveal from-left">
+        <img src="images/LOGO IAGI.png" alt="Logo IAGI">
+      </div>
+
+      <div class="about-content reveal from-right">
+        <div class="section-eyebrow"><span class="sub-title">Tentang Kami</span></div>
+        <h2 class="section-heading">Mengenal<br>SM-IAGI UPER</h2>
+
+        <div class="about-text">
+          <p>
+            Seksi mahasiswa Ikatan Ahli Geologi Indonesia Universitas Pertamina merupakan
+            sebuah organisasi yang dibentuk dengan tujuan membentuk regenerasi mahasiswa
+            yang berkelanjutan dalam ilmu kebumian.
+          </p>
+          <p>
+            SM IAGI Universitas Pertamina merupakan SM IAGI ke-28 dan diketuai oleh Elvin Sujatmiko
+            (Teknik Geologi 2016) yang terpilih pada tanggal 13 Oktober 2018 dan
+            resmi dilantik pada 17 Desember 2018.
+          </p>
+          <p>
+            Pada periode kepengurusan 2026/2027 merupakan Kabinet Parivartana —
+            berasal dari bahasa Sanskerta yang berarti perubahan, transformasi, dan
+            pembaruan menuju keadaan yang lebih baik.
+          </p>
+        </div>
+
+        <div class="kabinet-badge">
+          Kabinet Parivartana &mdash; 2026/2027
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       VISI & MISI
+  ══════════════════════════════════════ -->
+  <section id="visi-misi">
+
+    <div class="visimisi-header reveal">
+      <div class="section-eyebrow"><span class="sub-title">Our Foundation</span></div>
+      <h2 class="section-heading">Visi &amp; Misi</h2>
+    </div>
+
+    <div class="visimisi-grid">
+
+      <div class="vm-card reveal from-left">
+        <h3 class="vm-title">Visi</h3>
+        <p class="vm-text">
+          Menjadikan SM-IAGI Universitas Pertamina sebagai wadah yang dinamis, progresif
+          dalam mengembangkan potensi anggota, secara inofatif, dan membentuk individu berintegritas,
+          kompeten, berpikir kritis, dan memiliki keterampilan serta pengetahuan yang bermanfaat bagi
+          masa depan.
+        </p>
+      </div>
+
+      <div class="vm-card reveal from-right delay-2">
+        <h3 class="vm-title">Misi</h3>
+        <ul class="vm-list">
+          <li>Menciptakan lingkungan organisasi yang aktif, kolaboratif, dan berkelanjutan.</li>
+          <li>Meningkatkan sarana pengembangan edukasi melalui berbagai program ilmu kebumian.</li>
+          <li>Mengembangkan kualitas anggota secara bertahap dan berkelanjutan.</li>
+        </ul>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ══════════════════════════════════════
+       STRUKTUR ORGANISASI
+       - Pimpinan (President + VP) satu panel
+       - Tiap divisi = panel gradasi biru berisi 6 kartu anggota
+       - CATATAN UNTUK EDIT:
+         * Untuk isi FOTO anggota: ganti src pada <img> di dalam
+           .member-photo, atau untuk slot kosong ganti
+           <div class="member-photo no-photo">...svg...</div>
+           menjadi <div class="member-photo"><img src="images/NAMA.jpg" alt="Nama"></div>
+         * Untuk TAMBAH/KURANGI anggota: copy/paste atau hapus
+           blok <div class="member-card">...</div> di dalam
+           .division-members pada divisi terkait.
+         * Untuk ganti NAMA & JABATAN: edit teks di dalam
+           .member-role dan .member-name.
+  ══════════════════════════════════════ -->
+  <section id="divisi">
+
+    <div class="divisi-header reveal">
+      <div class="section-eyebrow"><span class="sub-title">Our Team</span></div>
+      <h2 class="section-heading">Struktur Organisasi</h2>
+      <p class="section-description"></p>
+
+      <!-- Navigation Bar / Filter Tab -->
+      <div class="division-tabs">
+        <button class="tab-btn active" data-target="pimpinan">Pimpinan</button>
+        <button class="tab-btn" data-target="sekretaris">Sekretaris</button>
+        <button class="tab-btn" data-target="bendahara">Bendahara</button>
+        <button class="tab-btn" data-target="internal">Internal</button>
+        <button class="tab-btn" data-target="eksternal">Eksternal</button>
+        <button class="tab-btn" data-target="bisnis">Bisnis</button>
+        <button class="tab-btn" data-target="media">Media</button>
+        <button class="tab-btn" data-target="akademik">Akademik</button>
+      </div>
+    </div>
+
+    <div class="org-tree">
+
+      <!-- ══ PIMPINAN : President & Vice President ══ -->
+      <div class="division-panel leadership-panel reveal scale-in active" data-category="pimpinan">
+        <div class="division-panel-header">
+          <div>
+            <span class="division-eyebrow">Pimpinan</span>
+            <h3 class="division-panel-title">Presiden &amp; Wakil Presiden</h3>
+          </div>
+        </div>
+
+        <div class="leadership-row">
+          <div class="division-members">
+            <div class="member-card">
+              <div class="member-photo"><img src="images/Struktur IAGI Uper/BPH/Presiden.png" alt="Presiden"></div>
+              <div class="member-role">Presiden</div>
+              <div class="member-name">Raphael Alfaro Dumat</div>
+            </div>
+
+            <div class="member-card">
+              <div class="member-photo"><img src="images/Struktur IAGI Uper/BPH/Wapres.png" alt="Wakil Presiden"></div>
+              <div class="member-role">Wakil Presiden</div>
+              <div class="member-name">Syahrbanu</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ══ DIVISI : Sekretaris ══ -->
+      <div class="division-panel reveal" data-category="sekretaris">
+        <div class="division-panel-header">
+          <div>
+            <span class="division-eyebrow">BPH</span>
+            <h3 class="division-panel-title">Sekretaris</h3>
+          </div>
+        </div>
+
+        <div class="division-members">
+          <div class="member-card">
+            <div class="member-photo"><img src="images/Struktur IAGI Uper/BPH/Sekre 1.png" alt="Sekretaris 1"></div>
+            <div class="member-role">SEKRETARIS 1</div>
+            <div class="member-name">Keysha Nuralya Humaira Utomo</div>
+          </div>
+
+          <div class="member-card">
+            <div class="member-photo"><img src="images/Struktur IAGI Uper/BPH/Sekre 2.png" alt="Sekretaris 2"></div>
+            <div class="member-role">SEKRETARIS 2</div>
+            <div class="member-name">Dinan Hasya Sadida</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ══ DIVISI : Bendahara ══ -->
+      <div class="division-panel reveal" data-category="bendahara">
+        <div class="division-panel-header">
+          <div>
+            <span class="division-eyebrow">BPH</span>
+            <h3 class="division-panel-title">Bendahara</h3>
+          </div>
+        </div>
+
+        <div class="division-members">
+          <div class="member-card">
+            <div class="member-photo"><img src="images/Struktur IAGI Uper/BPH/Bendahara 1.png" alt="Bendahara 1"></div>
+            <div class="member-role">Bendahara 1</div>
+            <div class="member-name">Shaqillah Indrianti</div>
+          </div>
+
+          <div class="member-card">
+            <div class="member-photo"><img src="images/Struktur IAGI Uper/BPH/Bendahara 2.png" alt="Bendahara 2"></div>
+            <div class="member-role">Bendahara 2</div>
+            <div class="member-name">Nabila Putri Septiana</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ══ DIVISI : Internal ══ -->
+      <div class="division-panel reveal" data-category="internal">
+        <div class="division-panel-header">
+          <div>
+            <span class="division-eyebrow">Divisi</span>
+            <h3 class="division-panel-title">Internal</h3>
+          </div>
+        </div>
+
+        <div class="division-members">
+          <div class="member-card">
+            <div class="member-photo"><img src="images/Struktur IAGI Uper/Internal/Internal Kadiv.png" alt="Kepala Divisi Internal"></div>
+            <div class="member-role">Kepala Divisi</div>
+            <div class="member-name">Pace yunus</div>
+          </div>
+
+          <div class="member-card">
+            <div class="member-photo"><img src="images/Struktur IAGI Uper/Internal/Internal 1.png" alt="Anggota Internal 1"></div>
+            <div class="member-role">Staff</div>
+            <div class="member-name">Hayato</div>
+          </div>
+
+          <div class="member-card">
+            <div class="member-photo"><img src="images/Struktur IAGI Uper/Internal/Internal 2.png" alt="Anggota Internal 2"></div>
+            <div class="member-role">Staff</div>
+            <div class="member-name">Gabriel L.J. TRG.</div>
+          </div>
+
+          <div class="member-card">
+            <div class="member-photo"><img src="images/Struktur IAGI Uper/Internal/Internal 3.png" alt="Anggota Internal 3"></div>
+            <div class="member-role">Staff</div>
+            <div class="member-name">Rasya Ghairan Arrafi</div>
+          </div>
+
+          <div class="member-card">
+            <div class="member-photo"><img src="images/Struktur IAGI Uper/Internal/Internal 4.png" alt="Anggota Internal 4"></div>
+            <div class="member-role">Staff</div>
+            <div class="member-name">Wirly Aulia Afaf</div>
+          </div>
+
+          <div class="member-card">
+            <div class="member-photo"><img src="images/Struktur IAGI Uper/Internal/Internal 5.png" alt="Anggota Internal 5"></div>
+            <div class="member-role">Staff</div>
+            <div class="member-name">Natasya Octavia Siregar</div>
+          </div>
+
+          <div class="member-card">
+            <div class="member-photo"><img src="images/Struktur IAGI Uper/Internal/Internal 6.png" alt="Anggota Internal 6"></div>
+            <div class="member-role">Staff</div>
+            <div class="member-name">Greasya Maria Criestin Juliasintani</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ══ DIVISI : Eksternal ══ -->
+      <div class="division-panel reveal" data-category="eksternal">
+        <div class="division-panel-header">
+          <div>
+            <span class="division-eyebrow">Divisi</span>
+            <h3 class="division-panel-title">Eksternal</h3>
+          </div>
+        </div>
+
+        <div class="division-members">
+          <div class="member-card">
+            <div class="member-photo"><img src="images/Struktur IAGI Uper/Eksternal/Eksternal Kadiv.png" alt="Kepala Divisi Eksternal"></div>
+            <div class="member-role">Kepala Divisi</div>
+            <div class="member-name">Chandra Aulia Kartika Putri</div>
+          </div>
+
+          <div class="member-card">
+            <div class="member-photo"><img src="images/Struktur IAGI Uper/Eksternal/Eksternal 1.png" alt="Anggota Eksternal 1"></div>
+            <div class="member-role">Staff</div>
+            <div class="member-name">Mashifa Zakiya</div>
+          </div>
+
+          <div class="member-card">
+            <div class="member-photo"><img src="images/Struktur IAGI Uper/Eksternal/Eksternal 2.png" alt="Anggota Eksternal 2"></div>
+            <div class="member-role">Staff</div>
+            <div class="member-name">Zidan Dwi Prasetyo</div>
+          </div>
+
+          <div class="member-card">
+            <div class="member-photo"><img src="images/Struktur IAGI Uper/Eksternal/Eksternal 3.png" alt="Anggota Eksternal 3"></div>
+            <div class="member-role">Staff</div>
+            <div class="member-name">Raevo Danendra Zachary</div>
+          </div>
+
+          <div class="member-card">
+            <div class="member-photo"><img src="images/Struktur IAGI Uper/Eksternal/Eksternal 4.png" alt="Anggota Eksternal 4"></div>
+            <div class="member-role">Staff</div>
+            <div class="member-name">Muhammad Farren Rafif Akbar</div>
+          </div>
+
+          <div class="member-card">
+            <div class="member-photo"><img src="images/Struktur IAGI Uper/Eksternal/Eksternal 5.png" alt="Anggota Eksternal 5"></div>
+            <div class="member-role">Staff</div>
+            <div class="member-name">Erlangga Bagas Mulyawardhana</div>
+          </div>
+
+          <div class="member-card">
+            <div class="member-photo"><img src="images/Struktur IAGI Uper/Eksternal/Eksternal 6.png" alt="Anggota Eksternal 6"></div>
+            <div class="member-role">Staff</div>
+            <div class="member-name">Yohanes Emanuel Epo</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ══ DIVISI : Bisnis ══ -->
+      <div class="division-panel reveal" data-category="bisnis">
+        <div class="division-panel-header">
+          <div>
+            <span class="division-eyebrow">Divisi</span>
+            <h3 class="division-panel-title">Bisnis</h3>
+          </div>
+        </div>
+
+        <div class="division-members">
+          <div class="member-card">
+            <div class="member-photo"><img src="images/Struktur IAGI Uper/Bisnis/Bisnis Kadiv.png" alt="Kepala Divisi Bisnis"></div>
+            <div class="member-role">Kepala Divisi</div>
+            <div class="member-name">Hansen Gilberd Sinaga</div>
+          </div>
+
+          <div class="member-card">
+            <div class="member-photo"><img src="images/Struktur IAGI Uper/Bisnis/Bisnis 1.png" alt="Anggota Bisnis 1"></div>
+            <div class="member-role">Staff</div>
+            <div class="member-name">Bagawan Yazid Zidane S</div>
+          </div>
+
+          <div class="member-card">
+            <div class="member-photo"><img src="images/Struktur IAGI Uper/Bisnis/Bisnis 2.png" alt="Anggota Bisnis 2"></div>
+            <div class="member-role">Staff</div>
+            <div class="member-name">Gracia Oktavia Karundeng</div>
+          </div>
+
+          <div class="member-card">
+            <div class="member-photo"><img src="images/Struktur IAGI Uper/Bisnis/Bisnis 3.png" alt="Anggota Bisnis 3"></div>
+            <div class="member-role">Staff</div>
+            <div class="member-name">Febriyanti Listianingrum</div>
+          </div>
+
+          <div class="member-card">
+            <div class="member-photo"><img src="images/Struktur IAGI Uper/Bisnis/Bisnis 4.png" alt="Anggota Bisnis 4"></div>
+            <div class="member-role">Staff</div>
+            <div class="member-name">Atalya Eunike Sifra Werat</div>
+          </div>
+
+          <div class="member-card">
+            <div class="member-photo"><img src="images/Struktur IAGI Uper/Bisnis/Bisnis 5.png" alt="Anggota Bisnis 5"></div>
+            <div class="member-role">Staff</div>
+            <div class="member-name">Tary Malwa Febrianti</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ══ DIVISI : Media ══ -->
+      <div class="division-panel reveal" data-category="media">
+        <div class="division-panel-header">
+          <div>
+            <span class="division-eyebrow">Divisi</span>
+            <h3 class="division-panel-title">Media</h3>
+          </div>
+        </div>
+
+        <div class="division-members">
+          <div class="member-card">
+            <div class="member-photo"><img src="images/Struktur IAGI Uper/Media/Media Kadiv.png" alt="Kepala Divisi Media"></div>
+            <div class="member-role">Kepala Divisi</div>
+            <div class="member-name">Erwin Darma Kadar</div>
+          </div>
+
+          <div class="member-card">
+            <div class="member-photo"><img src="images/Struktur IAGI Uper/Media/Media 1.png" alt="Anggota Media 1"></div>
+            <div class="member-role">Staff</div>
+            <div class="member-name">Jeri Lemuel Waas</div>
+          </div>
+
+          <div class="member-card">
+            <div class="member-photo"><img src="images/Struktur IAGI Uper/Media/Media 2.png" alt="Anggota Media 2"></div>
+            <div class="member-role">Staff</div>
+            <div class="member-name">Chechilia Lalita Tri Lestari</div>
+          </div>
+
+          <div class="member-card">
+            <div class="member-photo"><img src="images/Struktur IAGI Uper/Media/Media 3.png" alt="Anggota Media 3"></div>
+            <div class="member-role">Staff</div>
+            <div class="member-name">Cesvinoza Miroslove Ammeca</div>
+          </div>
+
+          <div class="member-card">
+            <div class="member-photo"><img src="images/Struktur IAGI Uper/Media/Media 4.png" alt="Anggota Media 4"></div>
+            <div class="member-role">Staff</div>
+            <div class="member-name">Damai Atmatu Atkana</div>
+          </div>
+
+          <div class="member-card">
+            <div class="member-photo"><img src="images/Struktur IAGI Uper/Media/Media 5.png" alt="Anggota Media 5"></div>
+            <div class="member-role">Staff</div>
+            <div class="member-name">Shabrina Nur Amalina</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ══ DIVISI : Akademik ══ -->
+      <div class="division-panel reveal" data-category="akademik">
+        <div class="division-panel-header">
+          <div>
+            <span class="division-eyebrow">Divisi</span>
+            <h3 class="division-panel-title">Akademik &amp; Professional</h3>
+          </div>
+        </div>
+
+        <div class="division-members">
+          <div class="member-card">
+            <div class="member-photo"><img src="images/Struktur IAGI Uper/Akademik/Akademik Kadiv.png" alt="Kepala Divisi Akademik"></div>
+            <div class="member-role">Kepala Divisi</div>
+            <div class="member-name">Erlangga Dzikri Atthoriq</div>
+          </div>
+
+          <div class="member-card">
+            <div class="member-photo"><img src="images/Struktur IAGI Uper/Akademik/Akademik 1.png" alt="Anggota Akademik 1"></div>
+            <div class="member-role">Staff</div>
+            <div class="member-name">Muhammad Adib Zuhair</div>
+          </div>
+
+          <div class="member-card">
+            <div class="member-photo"><img src="images/Struktur IAGI Uper/Akademik/Akademik 2.png" alt="Anggota Akademik 2"></div>
+            <div class="member-role">Staff</div>
+            <div class="member-name">Salman Joko Wibowo</div>
+          </div>
+
+          <div class="member-card">
+            <div class="member-photo"><img src="images/Struktur IAGI Uper/Akademik/Akademik 3.png" alt="Anggota Akademik 3"></div>
+            <div class="member-role">Staff</div>
+            <div class="member-name">Farhan Maulana</div>
+          </div>
+
+          <div class="member-card">
+            <div class="member-photo"><img src="images/Struktur IAGI Uper/Akademik/Akademik 4.png" alt="Anggota Akademik 4"></div>
+            <div class="member-role">Staff</div>
+            <div class="member-name">Ines Mahardika</div>
+          </div>
+
+          <div class="member-card">
+            <div class="member-photo"><img src="images/Struktur IAGI Uper/Akademik/Akademik 5.png" alt="Anggota Akademik 5"></div>
+            <div class="member-role">Staff</div>
+            <div class="member-name">Amelia Kartika</div>
+          </div>
+
+          <div class="member-card">
+            <div class="member-photo"><img src="images/Struktur IAGI Uper/Akademik/Akademik 6.png" alt="Anggota Akademik 6"></div>
+            <div class="member-role">Staff</div>
+            <div class="member-name">Archangela Girlani Maharani Botha</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Division Modal Popup -->
+    <div id="divisionModal" class="division-modal">
+      <div class="division-modal-box">
+        <button class="division-modal-close" onclick="closeDivisionModal()">&times;</button>
+
+        <div class="modal-photo-wrap">
+          <div class="modal-photo-slider" id="modalPhotoSlider">
+            <div class="modal-photo-track" id="modalPhotoTrack">
+              <!-- photos injected by JS -->
+            </div>
+          </div>
+          <button class="modal-photo-arrow left" id="modalPhotoLeft" onclick="shiftModalPhoto(-1)">&#10094;</button>
+          <button class="modal-photo-arrow right" id="modalPhotoRight" onclick="shiftModalPhoto(1)">&#10095;</button>
+          <div class="modal-photo-dots" id="modalPhotoDots"></div>
+        </div>
+
+        <div class="division-modal-header">
+          <div class="division-modal-icon" id="divModalIcon">🌍</div>
+          <div>
+            <div class="division-modal-eyebrow">Divisi</div>
+            <h3 class="division-modal-title" id="divModalTitle">Nama Divisi</h3>
+          </div>
+        </div>
+        <p class="division-modal-desc" id="divModalDesc">Deskripsi divisi.</p>
+        <div class="division-modal-tasks" id="divModalTasks"></div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ══════════════════════════════════════
+       SECTION BERITA & PRESTASI TERKINI
+  ══════════════════════════════════════ -->
+  <section id="berita" class="latest-news-section reveal">
+    <div class="container">
+      <div class="about-content reveal from-right">
+
+        <!-- Header Section disesuaikan dengan pola Eyebrow & Heading -->
+        <div class="news-section-header reveal">
+          <div class="header-titles">
+            <div class="section-eyebrow">
+              <span class="sub-title">PUSAT INFORMASI</span>
+            </div>
+            <h2 class="section-heading">Berita & Kegiatan Terkini</h2>
+            <p class="section-desc">
+              Ikuti terus perkembangan terbaru, prestasi membanggakan dari Seksi Mahasiswa Ikatan
+              Ahli Geologi Indonesia Universitas Pertamina.
+            </p>
+          </div>
+          <a href="berita.html" class="top-more-link">Berita Selengkapnya &rarr;</a>
+        </div>
+
+        <!-- News Grid Layout (Kiri: Featured, Kanan: 5 Berita Kecil) -->
+        <div class="news-layout-grid">
+
+          <!-- KOLOM KIRI: Berita Utama / Featured Card -->
+          <article class="featured-news-card reveal" data-gambar="images/Berita/Berita 1.JPG"
+            data-judul="Pererat Kebersamaan, Divisi Internal SM-IAGI UPER Gelar Gathering Anggota"
+            data-isi="<p>Dalam upaya mempererat hubungan antaranggota, Divisi Internal SM-IAGI Universitas Pertamina mengadakan kegiatan Gathering yang berlangsung dengan penuh kehangatan dan kebersamaan. Acara ini diikuti oleh seluruh pengurus sebagai wadah untuk membangun komunikasi yang lebih erat di luar kegiatan organisasi.</p><p>Berbagai permainan interaktif, sesi berbagi cerita, hingga makan bersama menjadi rangkaian kegiatan yang menciptakan suasana akrab dan menyenangkan. Selain sebagai ajang refreshing, gathering ini juga menjadi momentum untuk meningkatkan rasa kekeluargaan serta memperkuat kerja sama antaranggota dalam menjalankan program kerja organisasi.</p><p>Melalui kegiatan ini, diharapkan seluruh pengurus semakin solid, saling mengenal lebih dekat, dan mampu menciptakan lingkungan organisasi yang harmonis sehingga dapat memberikan kontribusi terbaik bagi SM-IAGI Universitas Pertamina.</p>"
+            data-tagline="KEGIATAN INTERNAL" onclick="handleNewsClick(this)">
+            <div class="featured-thumb-wrapper">
+              <img src="images/Berita/Berita 1.JPG" alt="Gathering Divisi Internal" class="featured-thumb">
+              <span class="news-badge">INTERNAL EVENT</span>
+            </div>
+            <div class="featured-content">
+              <h3 class="featured-title">Pererat Kebersamaan, Divisi Internal SM-IAGI UPER...</h3>
+              <p class="featured-excerpt">
+                Dalam upaya mempererat hubungan antaranggota, Divisi Internal SM-IAGI Universitas Pertamina...
+              </p>
+            </div>
+          </article>
+
+          <!-- KOLOM KANAN: Daftar 5 Berita Kecil -->
+          <div class="small-news-list">
+
+            <!-- Small Card 1 -->
+            <article class="small-news-card reveal" data-gambar="images/Berita/Berita 2.png"
+              data-judul="Divisi Akademik SM-IAGI UPER Selenggarakan Sharing Session Bersama Alumni"
+              data-isi="<p>JAKARTA - Divisi Akademik SM-IAGI Universitas Pertamina sukses menyelenggarakan kegiatan Sharing Session Alumni yang menghadirkan alumni sebagai narasumber untuk berbagi pengalaman selama berkarier di industri pertambangan.</p><p>Mengusung tema mengenai perjalanan seorang geologist dari dunia akademik menuju dunia profesional, kegiatan ini memberikan wawasan kepada mahasiswa mengenai tantangan, peluang karier, serta kompetensi yang perlu dipersiapkan sejak di bangku kuliah.</p><p>Melalui sesi diskusi yang interaktif, peserta memperoleh berbagai insight mengenai pengembangan diri, dunia kerja, hingga pentingnya membangun jaringan profesional. Kegiatan ini diharapkan dapat memotivasi mahasiswa untuk terus meningkatkan kemampuan akademik maupun non-akademik dalam menghadapi dunia industri.</p>"
+              data-tagline="AKADEMIK" onclick="handleNewsClick(this)">
+              <div class="small-thumb-wrapper">
+                <img src="images/Berita/Berita 2.png" alt="Sharing Session Alumni" class="small-thumb">
+              </div>
+              <div class="small-content">
+                <span class="small-badge">ALUMNI TALK</span>
+                <h4 class="small-title">Divisi Akademik SM-IAGI UPER Selenggarakan...</h4>
+                <span class="small-time">19 Jul 2026</span>
+              </div>
+            </article>
+
+            <!-- Small Card 2 -->
+            <article class="small-news-card reveal" data-gambar="images/Berita/Berita 3.jpeg"
+              data-judul="SM-IAGI Universitas Pertamina Gelar Pelepasan Alumni sebagai Bentuk Apresiasi dan Silaturahmi"
+              data-isi="<p>JAKARTA - SM-IAGI Universitas Pertamina menyelenggarakan acara pelepasan alumni sebagai bentuk apresiasi atas dedikasi serta kontribusi yang telah diberikan selama menjadi bagian dari organisasi.</p><p>Kegiatan ini berlangsung dalam suasana hangat dan penuh kebersamaan. Selain menjadi momen perpisahan, acara ini juga menjadi kesempatan untuk mempererat hubungan antara alumni dengan pengurus aktif sehingga silaturahmi tetap terjaga.</p><p>SM-IAGI Universitas Pertamina berharap para alumni dapat terus memberikan inspirasi, berbagi pengalaman, serta menjadi mitra organisasi dalam mendukung pengembangan mahasiswa geologi di masa mendatang.</p>"
+              data-tagline="APRESIASI" onclick="handleNewsClick(this)">
+              <div class="small-thumb-wrapper">
+                <img src="images/Berita/Berita 3.jpeg" alt="Pelepasan Alumni" class="small-thumb">
+              </div>
+              <div class="small-content">
+                <span class="small-badge badge-announcement">ALUMNI EVENT</span>
+                <h4 class="small-title">SM-IAGI Universitas Pertamina Gelar Pelepasa...</h4>
+                <span class="small-time">25 Mei 2026</span>
+              </div>
+            </article>
+
+            <!-- Small Card 3 -->
+            <article class="small-news-card reveal" data-gambar="images/Berita/Berita 4.jpeg"
+              data-judul="Kabinet SM-IAGI Universitas Pertamina 2026/2027 Gelar Rapat Perdana"
+              data-isi="<p>JAKARTA - SM-IAGI Universitas Pertamina resmi memulai perjalanan kepengurusan Kabinet 2026/2027 melalui pelaksanaan rapat perdana yang dihadiri oleh seluruh pengurus.</p><p>Rapat ini menjadi langkah awal dalam menyusun arah organisasi, memperkenalkan struktur kepengurusan, serta membahas program kerja yang akan dilaksanakan selama satu periode ke depan. Selain itu, setiap divisi juga diberikan kesempatan untuk menyampaikan rencana kegiatan dan target yang ingin dicapai.</p><p>Dengan semangat kolaborasi dan profesionalisme, rapat perdana ini diharapkan menjadi fondasi yang kuat dalam membangun organisasi yang aktif, inovatif, serta memberikan manfaat bagi seluruh mahasiswa Teknik Geologi Universitas Pertamina.</p>"
+              data-tagline="BERITA INTERNAL" onclick="handleNewsClick(this)">
+              <div class="small-thumb-wrapper">
+                <img src="images/Berita/Berita 4.jpeg" alt="Rapat Perdana Kabinet" class="small-thumb">
+              </div>
+              <div class="small-content">
+                <span class="small-badge badge-activity">INFO KABINET</span>
+                <h4 class="small-title">Kabinet SM-IAGI Universitas Pertamina...</h4>
+                <span class="small-time">8 Mei 2026</span>
+              </div>
+            </article>
+
+            <!-- Small Card 4 -->
+            <article class="small-news-card reveal" data-gambar="images/Berita/Berita 5.jpeg"
+              data-judul="SM-IAGI UPER Gelar Get To Know untuk Menyambut Mahasiswa Teknik Geologi Angkatan 2024"
+              data-isi="<p>JAKARTA - Sebagai bagian dari upaya mempererat hubungan antarangkatan, SM-IAGI Universitas Pertamina mengadakan kegiatan Get To Know yang ditujukan bagi mahasiswa Teknik Geologi angkatan 2024.</p><p>Kegiatan ini bertujuan memperkenalkan organisasi, budaya kekeluargaan, serta berbagai program yang dimiliki SM-IAGI kepada mahasiswa baru. Melalui berbagai sesi interaktif, permainan kelompok, dan diskusi santai, peserta diajak untuk saling mengenal sekaligus membangun relasi dengan mahasiswa dari berbagai angkatan.</p><p>Diharapkan melalui kegiatan ini, mahasiswa angkatan 2024 dapat lebih mengenal lingkungan organisasi, aktif berpartisipasi dalam berbagai kegiatan kemahasiswaan, serta menumbuhkan rasa memiliki terhadap keluarga besar Teknik Geologi Universitas Pertamina.</p>"
+              data-tagline="WELCOMING EVENT" onclick="handleNewsClick(this)">
+              <div class="small-thumb-wrapper">
+                <img src="images/Berita/Berita 5.jpeg" alt="Get To Know Angkatan 2024" class="small-thumb">
+              </div>
+              <div class="small-content">
+                <span class="small-badge badge-activity">KEGIATAN SISWA</span>
+                <h4 class="small-title">SM-IAGI UPER Gelar Get To Know untuk...</h4>
+                <span class="small-time">23 Jul 2026</span>
+              </div>
+            </article>
+
+            <!-- Small Card 5 -->
+            <article class="small-news-card reveal" data-gambar="images/Berita/Berita 6.jpeg"
+              data-judul="SM-IAGI Universitas Pertamina Laksanakan Benchmarking ke Universitas Indonesia"
+              data-isi="<p>JAKARTA - SM-IAGI Universitas Pertamina melaksanakan kegiatan benchmarking ke Universitas Indonesia sebagai upaya memperluas wawasan organisasi serta memperkuat hubungan antarlembaga kemahasiswaan.</p><p>Dalam kegiatan ini, kedua organisasi saling berbagi pengalaman mengenai sistem kepengurusan, pengembangan program kerja, strategi kaderisasi, hingga pelaksanaan berbagai kegiatan akademik maupun non-akademik.</p><p>Melalui diskusi yang berlangsung secara terbuka, diharapkan tercipta pertukaran ide dan praktik terbaik yang dapat diterapkan dalam pengembangan organisasi. Benchmarking ini juga menjadi langkah awal untuk membuka peluang kolaborasi antara kedua organisasi di masa yang akan datang.</p>"
+              data-tagline="EXTERNALEVENT" onclick="handleNewsClick(this)">
+              <div class="small-thumb-wrapper">
+                <img src="images/Berita/Berita 6.jpeg" alt="Benchmarking ke UI" class="small-thumb">
+              </div>
+              <div class="small-content">
+                <span class="small-badge badge-announcement">STUDI BANDING</span>
+                <h4 class="small-title">SM-IAGI Universitas Pertamina Laksanakan...</h4>
+                <span class="small-time">23 Jul 2026</span>
+              </div>
+            </article>
+
+          </div>
+
+        </div>
+
+        <!-- Tombol Bawah (Center) -->
+        <div class="news-bottom-action reveal">
+          <a href="berita.html" class="btn-see-all">Lihat Semua Berita</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MODAL POP-UP DINAMIS -->
+  <div class="article-modal" id="articleModal">
+    <!-- Overlay (diklik untuk menutup modal) -->
+    <div class="modal-overlay" onclick="closeModal()"></div>
+
+    <div class="modal-container">
+      <!-- Tombol Close (Silang) -->
+      <button type="button" class="modal-close" onclick="closeModal()" aria-label="Tutup">&times;</button>
+
+      <div class="article-content">
+        <div class="article-featured-image">
+          <img id="modalImage" src="" alt="Foto Berita">
+        </div>
+        <div class="article-body">
+          <div id="modalText"></div>
+          <p class="article-tagline" id="modalTagline"></p>
+        </div>
+        <div class="article-share">
+          <span class="share-label">Bagikan:</span>
+          <div class="share-buttons">
+            <a href="#" id="shareFB" target="_blank" class="share-btn facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" id="shareTW" target="_blank" class="share-btn twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" id="shareWA" target="_blank" class="share-btn whatsapp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCRIPT JAVASCRIPT MODAL -->
+  <script>
+    // Fungsi penangan klik kartu berita (Membaca data-* attribute)
+    function handleNewsClick(cardElement) {
+      const gambar = cardElement.getAttribute('data-gambar');
+      const judul = cardElement.getAttribute('data-judul');
+      const isi = cardElement.getAttribute('data-isi');
+      const tagline = cardElement.getAttribute('data-tagline');
+      // data-isi sudah berisi tag <p> di dalamnya, jadi tidak perlu dibungkus <p> lagi
+      const isiHTML = `<h3>${judul}</h3>${isi}`;
+      openNewsModal(gambar, isiHTML, tagline);
+    }
+
+    // Fungsi utama penyedia modal
+    function openNewsModal(gambar, isiHTML, tagline) {
+      const modalImg = document.getElementById('modalImage');
+      if (gambar) {
+        modalImg.src = gambar;
+        modalImg.style.display = 'block';
+      } else {
+        modalImg.style.display = 'none';
+      }
+      document.getElementById('modalText').innerHTML = isiHTML || '';
+      document.getElementById('modalTagline').innerText = tagline || '';
+      // Menghubungkan URL Berbagi Sosial Media
+      const currentURL = encodeURIComponent(window.location.href);
+      document.getElementById('shareFB').href = `https://www.facebook.com/sharer/sharer.php?u=${currentURL}`;
+      document.getElementById('shareTW').href = `https://twitter.com/intent/tweet?url=${currentURL}`;
+      document.getElementById('shareWA').href = `https://api.whatsapp.com/send?text=${currentURL}`;
+      document.getElementById('articleModal').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      document.getElementById('articleModal').classList.remove('active');
+      document.body.style.overflow = 'auto';
+    }
+  </script>
+
+  <!-- ══════════════════════════════════════
+       STATISTIK PENGUNJUNG
+  ══════════════════════════════════════ -->
+  <section class="visitor-stats-section reveal">
+    <div class="container">
+
+      <!-- Header Statistik disesuaikan dengan pola Eyebrow & Heading -->
+      <div class="contact-header reveal">
+        <div class="section-eyebrow"><span class="sub-title">STATISTIK</span></div>
+        <h2 class="section-heading">Pengunjung Website</h2>
+      </div>
+
+      <!-- Container Kartu Statistik -->
+      <div class="stats-container-list">
+
+        <!-- Hari Ini -->
+        <div class="contact-item-card reveal">
+          <div class="contact-icon-box">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="16" y1="2" x2="16" y2="6"></line>
+              <line x1="8" y1="2" x2="8" y2="6"></line>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+          </div>
+          <div class="contact-info">
+            <strong id="count-today" class="stat-number" data-target="15">15</strong>
+            <span>Hari Ini</span>
+          </div>
+        </div>
+
+        <!-- Bulan Ini -->
+        <div class="contact-item-card reveal">
+          <div class="contact-icon-box">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+              <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+              <line x1="12" y1="22.08" x2="12" y2="12"></line>
+            </svg>
+          </div>
+          <div class="contact-info">
+            <strong id="count-month" class="stat-number" data-target="320">320</strong>
+            <span>Bulan Ini</span>
+          </div>
+        </div>
+
+        <!-- Tahun Ini -->
+        <div class="contact-item-card reveal">
+          <div class="contact-icon-box">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+          </div>
+          <div class="contact-info">
+            <strong id="count-year" class="stat-number" data-target="1450">1.450</strong>
+            <span>Tahun Ini</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       KONTAK
+  ══════════════════════════════════════ -->
+  <section id="contact">
+
+    <div class="contact-header reveal">
+      <div class="section-eyebrow"><span class="sub-title">Get in Touch</span></div>
+      <h2 class="section-heading">Hubungi Kami</h2>
+    </div>
+
+    <div class="contact-layout">
+
+      <!-- Info Cards -->
+      <div class="contact-cards reveal from-left">
+
+        <a href="https://maps.app.goo.gl/BCuHzAacgC3uWdvR9" target="_blank" class="contact-card">
+          <div class="contact-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+          </div>
+          <div class="contact-card-body">
+            <h4>Lokasi</h4>
+            <p>Universitas Pertamina, Jl. Teuku Nyak Arief, Simprug, Jakarta Selatan 12220</p>
+          </div>
+        </a>
+
+        <a href="mailto:sekretaris.smiagiup@gmail.com" class="contact-card">
+          <div class="contact-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+          </div>
+          <div class="contact-card-body">
+            <h4>Email</h4>
+            <p>sekretaris.smiagiup@gmail.com</p>
+          </div>
+        </a>
+
+        <a href="https://instagram.com/smiagi_uper" target="_blank" class="contact-card">
+          <div class="contact-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+            </svg>
+          </div>
+          <div class="contact-card-body">
+            <h4>Instagram</h4>
+            <p>smiagi_uper</p>
+          </div>
+        </a>
+
+        <a href="https://www.linkedin.com/company/smiagiup/?originalSubdomain=id" target="_blank" class="contact-card">
+          <div class="contact-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+              <rect x="2" y="9" width="4" height="12" />
+              <circle cx="4" cy="4" r="2" />
+            </svg>
+          </div>
+          <div class="contact-card-body">
+            <h4>LinkedIn</h4>
+            <p>SM-IAGI Universitas Pertamina</p>
+          </div>
+        </a>
+
+        <a href="https://www.tiktok.com/search?q=sm%20iagi%20uper&t=1779756327136" target="_blank" class="contact-card">
+          <div class="contact-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
+            </svg>
+          </div>
+          <div class="contact-card-body">
+            <h4>TikTok</h4>
+            <p>smiagi_uper</p>
+          </div>
+        </a>
+
+      </div>
+
+      <!-- Form Pesan -->
+      <div class="contact-form-wrap reveal from-right">
+        <div class="form-title">Kirim Pesan</div>
+
+        <div class="form-group">
+          <label for="formName">Nama Lengkap</label>
+          <input type="text" id="formName" placeholder="Masukkan nama lengkap">
+        </div>
+
+        <div class="form-group">
+          <label for="formEmail">Email</label>
+          <input type="email" id="formEmail" placeholder="Masukkan email">
+        </div>
+
+        <div class="form-group">
+          <label for="formMsg">Pesan</label>
+          <textarea id="formMsg" placeholder="Tulis pesan Anda..."></textarea>
+        </div>
+
+        <button class="form-submit" onclick="sendMessage()">Kirim Pesan &#8594;</button>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ══════════════════════════════════════
+       PARTNER TICKER
+  ══════════════════════════════════════ -->
+  <div id="partners">
+    <div class="partner-outer">
+      <div class="partner-track">
+
+        <div class="partner-group">
+          <div class="partner-item"><img src="images/Partner/IAGI.png" alt="IAGI"></div>
+          <div class="partner-item"><img src="images/Partner/HMTG Mahandraga.png" alt="HMTG"></div>
+          <div class="partner-item"><img src="images/Partner/Geologi Uper.png" alt="Geologi"></div>
+          <div class="partner-item"><img src="images/Partner/Universitas Pertamina.png" alt="Universitas Pertamina"></div>
+          <div class="partner-item"><img src="images/Partner/FGMI.png" alt="FGMI"></div>
+        </div>
+
+        <div class="partner-group">
+          <div class="partner-item"><img src="images/Partner/IAGI.png" alt="IAGI"></div>
+          <div class="partner-item"><img src="images/Partner/HMTG Mahandraga.png" alt="HMTG"></div>
+          <div class="partner-item"><img src="images/Partner/Geologi Uper.png" alt="Geologi"></div>
+          <div class="partner-item"><img src="images/Partner/Universitas Pertamina.png" alt="Universitas Pertamina"></div>
+          <div class="partner-item"><img src="images/Partner/FGMI.png" alt="FGMI"></div>
+        </div>
+
+        <div class="partner-group">
+          <div class="partner-item"><img src="images/Partner/IAGI.png" alt="IAGI"></div>
+          <div class="partner-item"><img src="images/Partner/HMTG Mahandraga.png" alt="HMTG"></div>
+          <div class="partner-item"><img src="images/Partner/Geologi Uper.png" alt="Geologi"></div>
+          <div class="partner-item"><img src="images/Partner/Universitas Pertamina.png" alt="Universitas Pertamina"></div>
+          <div class="partner-item"><img src="images/Partner/FGMI.png" alt="FGMI"></div>
+        </div>
+
+        <div class="partner-group">
+          <div class="partner-item"><img src="images/Partner/IAGI.png" alt="IAGI"></div>
+          <div class="partner-item"><img src="images/Partner/HMTG Mahandraga.png" alt="HMTG"></div>
+          <div class="partner-item"><img src="images/Partner/Geologi Uper.png" alt="Geologi"></div>
+          <div class="partner-item"><img src="images/Partner/Universitas Pertamina.png" alt="Universitas Pertamina"></div>
+          <div class="partner-item"><img src="images/Partner/FGMI.png" alt="FGMI"></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════ -->
+  <footer>
+
+    <div class="footer-inner">
+
+      <div class="nav-logo" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
+        <img src="images/IKATAN GEOLOGI.png" alt="Logo SM-IAGI UPER">
+      </div>
+
+      <div class="footer-socials">
+        <a href="https://instagram.com/smiagi_uper" target="_blank" class="footer-social-link" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/company/smiagiup/?originalSubdomain=id" target="_blank"
+          class="footer-social-link" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+            <rect x="2" y="9" width="4" height="12" />
+            <circle cx="4" cy="4" r="2" />
+          </svg>
+        </a>
+        <a href="https://www.tiktok.com/search?q=sm%20iagi%20uper&t=1779756327136" target="_blank"
+          class="footer-social-link" aria-label="TikTok">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
+          </svg>
+        </a>
+        <a href="mailto:sekretaris.smiagiup@gmail.com" class="footer-social-link" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+            <polyline points="22,6 12,13 2,6" />
+          </svg>
+        </a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span class="footer-copy">
+        &copy; 2026 SM-IAGI Universitas Pertamina.
+        Developed by Academic &amp; Professional Division.
+      </span>
+      <span class="footer-badge">Kabinet Parivartana</span>
+    </div>
+
+  </footer>
+
+  <!-- ══════════════════════════════════════
+       LIBRARIES & SCRIPTS
+  ══════════════════════════════════════ -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    emailjs.init("rzSbSzJGnqHLJfNuY");
+  </script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
